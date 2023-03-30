@@ -1,0 +1,221 @@
+html{
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #FFF;
+  
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+h5 {
+  display: block;
+  margin:10px;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  width:auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+ 
+
+#header_text{
+  padding:8px;
+}
+
+.signup {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.pricing{
+  display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 100px;
+      margin-bottom: 20px;
+}
+
+.pricing_head {
+  font-size: 60px;
+  font-weight: 300;
+  width: 670px;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pricing_body {
+  font-size: 20px;
+  font-weight: 300;
+  width: 670px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+.card_wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  column-gap: 20px;
+}
+
+.card{
+  width:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(123, 123, 123);
+  padding: auto 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_header{
+  width: 300px;
+  text-align: center;
+  margin: 0;
+  background-color: rgba(0,0,0,.125);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card_body{
+  text-align: center;
+}
+
+li{
+  display: list-item;
+  list-style: none;
+  font-size: larger;
+  padding: 0;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+#style1{
+  font-size:50px; 
+  font-weight: 500;
+}
+
+#style2{
+  color:darkgrey; 
+  font-size:40px
+}
+
+h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0;
+ }
+
+ .btn {
+  width: 200px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.btn_blue {
+  width: 200px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #007bff;
+  background-image: none;
+  border-color: #007bff;
+}
+footer{
+  margin-top: 30px;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer_wrapper {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 900px;
+  padding-top: 50px;
+  border-top: 2px solid black;
+  bottom:0;
+}
+
+.footer_container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.footer_text{
+  padding-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
