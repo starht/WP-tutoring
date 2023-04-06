@@ -3,9 +3,9 @@ import "./App.css";
 
 export default function Card(props) {
   
-  const [A, setCounter] = useState(parseInt(props.user));
+  const [number, setCounter] = useState(parseInt(props.user));
   const onIncrease = () => {
-    setCounter(A + 1);
+    setCounter(number + 1);
   };
 
   return (
@@ -19,7 +19,7 @@ export default function Card(props) {
           <span id="style2"> / mo</span>
         </p>
         <ul>
-          <li>{A} users included</li>
+          <li>{number} users included</li>
           <li>{props.storage} GB of storage</li>
           <li>{props.support} support</li>
           <li>Help center access</li>

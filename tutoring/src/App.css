@@ -172,6 +172,11 @@ h4{
   border-color: #007bff;
 }
 
+.btn:hover{
+  color:white;
+  background-color: #007bff;
+}
+
 .btn_blue {
   width: 200px;
   display: inline-block;
@@ -189,6 +194,12 @@ h4{
   background-image: none;
   border-color: #007bff;
 }
+
+.btn_blue:hover{
+  background-color:white;
+  color: #007bff;
+}
+
 footer{
   margin-top: 30px;
   display: flex;
