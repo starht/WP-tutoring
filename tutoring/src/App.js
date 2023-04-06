@@ -8,27 +8,27 @@ class App extends React.Component {
       <>
         <header>
           <h5>Company name</h5>
-          <div id="header_text">
-            <a id="header_text">Features</a>
-            <a id="header_text">Enterprise</a>
-            <a id="header_text">Support</a>
-            <a id="header_text">Pricing</a>
-            <button class="signup">Sign up</button>
+          <div className="header_text">
+            <a className="header_text">Features</a>
+            <a className="header_text">Enterprise</a>
+            <a className="header_text">Support</a>
+            <a className="header_text">Pricing</a>
+            <button className="signup">Sign up</button>
           </div>
         </header>
-        <div class="wrap">
-          <div class="pricing">
+        <div className="wrap">
+          <div className="pricing">
             <div>
-              <p class="pricing_head">Pricing</p>
-              <p class="pricing_body">
+              <p className="pricing_head">Pricing</p>
+              <p className="pricing_body">
                 Quickly build an effective pricing table for your potential
                 customers with this Bootstrap example. It's built with default
                 Bootstrap components and utilities with little customization.
               </p>
             </div>
           </div>
-          <div class="container">
-            <div class="card_wrap">
+          <div className="container">
+            <div className="card_wrap">
               <Card name="Free" money="0" user="10" storage="2" support="Email" css="btn" btntext="Sign up for free"/>
               <Card name="Pro" money="15" user="20" storage="10" support="Priority email" css="btn_blue" btntext="Get started"/>
               <Card name="Enterprise" money="29" user="30" storage="15" support="Phone and email" css="btn_blue" btntext="Contact us"/>
@@ -36,8 +36,8 @@ class App extends React.Component {
           </div>
         </div>
         <footer>
-          <div class="footer_wrapper">
-            <div class="footer_container">
+          <div className="footer_wrapper">
+            <div className="footer_container">
               <img
                 src="./images/bootstrap-solid.svg"
                 alt=""
@@ -46,8 +46,8 @@ class App extends React.Component {
               ></img>
               <small>&copy; 2017-2018</small>
             </div>
-            <div class="footer_container">
-              <p class="footer_text">Features</p>
+            <div className="footer_container">
+              <p className="footer_text">Features</p>
               <ul>
                 <li>Cool stuff</li>
                 <li>Random feature</li>
@@ -57,8 +57,8 @@ class App extends React.Component {
                 <li>Last time</li>
               </ul>
             </div>
-            <div class="footer_container">
-              <p class="footer_text">Resources</p>
+            <div className="footer_container">
+              <p className="footer_text">Resources</p>
               <ul>
                 <li>Resource</li>
                 <li>Resource name</li>
@@ -66,8 +66,8 @@ class App extends React.Component {
                 <li>Final resource</li>
               </ul>
             </div>
-            <div class="footer_container">
-              <p class="footer_text">About</p>
+            <div className="footer_container">
+              <p className="footer_text">About</p>
               <ul>
                 <li>Team</li>
                 <li>Locations</li>
