@@ -22,13 +22,15 @@ function App() {
   };
   /** 2.(1) */
 
+
   const setC123 = () => {
     setC(1);
     setC(2);
-    setC(3);
+    setC(3); // 이것만 실행된다.
     console.log("(setC123) state 변수 c = ", c);
   };
   /** 2.(2) */
+
 
   const setCplus1 = () => {
     setC(c + 1);
@@ -36,6 +38,7 @@ function App() {
   };
   /** 2.(3) */
 
+  
   return (
     <div>
       <div>

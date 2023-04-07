@@ -5,8 +5,9 @@ export default function Card(props) {
   
   const [number, setCounter] = useState(parseInt(props.user));
   const onIncrease = () => {
-    setCounter(number + 1);
+    setCounter((prev) => prev + 1); // +1 보다 prev 사용할 것
   };
+
 
   return (
     <div class="card">
