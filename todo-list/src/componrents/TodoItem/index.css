@@ -1,0 +1,9 @@
+.todo_root {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+.todo_title{
+
+    text-decoration: underline;
+}
