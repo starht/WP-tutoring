@@ -14,9 +14,9 @@ const TodoItem = ({ title }) => {
         type = "checkbox" 
         checked = {checked} 
         onChange={onChangeCheckbox}
-        className={checked ? "todo_title" : ""} // 클래스 조건부 적용
+        className={checked ? "todochecked" : ""}
       />
-      <span className={checked ? "todo_title" : ""}>{title}</span> {}
+      <span className={`todo_title ${checked ? "todochecked" : ""}`}>{title}</span> {}
     </div>
 }
 export default TodoItem

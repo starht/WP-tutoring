@@ -1,9 +1,22 @@
 .todo_root {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-.todo_title{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
-    text-decoration: underline;
+.todo_root input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+	cursor: pointer;
+}
+
+.todo_title {
+  padding-left: 5px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.todochecked {
+  color:rgb(131, 131, 131);
+  text-decoration: line-through;
 }
