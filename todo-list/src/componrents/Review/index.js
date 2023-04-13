@@ -9,7 +9,7 @@ const Review = ({ title, onTitleChange }) => {
     setNewTitle(e.target.value);
   };
 
-  const handleTitleBlur = () => {
+  const _handleTitleBlur = () => {
     if (newTitle !== title) {
       onTitleChange(newTitle);
     }
@@ -24,7 +24,7 @@ const Review = ({ title, onTitleChange }) => {
           type="text"
           value={newTitle}
           onChange={handleTitleChange}
-          onBlur={handleTitleBlur}
+          onBlur={_handleTitleBlur}
         />
       ) : (
         <span className="review" onClick={() => setEditing(true)}>{title}</span>
