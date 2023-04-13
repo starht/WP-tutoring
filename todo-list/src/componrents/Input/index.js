@@ -17,7 +17,7 @@ const Input = ({ onAddTodo }) => {
   }
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form className="input_form" onSubmit={handleFormSubmit}>
       <input
         className="inputbox"
         type="text"
@@ -25,7 +25,7 @@ const Input = ({ onAddTodo }) => {
         value={title}
         onChange={handleInputChange}
       />
-      <button className="submit_botton" type="submit">Add Todo</button>
+      <button className="submit_button" type="submit">Add Todo</button>
     </form>
   );
 }
