@@ -20,13 +20,14 @@ const Review = ({ title, onTitleChange }) => {
     <div>
       {editing ? (
         <input
+          className="review"
           type="text"
           value={newTitle}
           onChange={handleTitleChange}
           onBlur={handleTitleBlur}
         />
       ) : (
-        <span onClick={() => setEditing(true)}>{title}</span>
+        <span className="review" onClick={() => setEditing(true)}>{title}</span>
       )}
     </div>
   );
