@@ -1,12 +1,14 @@
 import "./index.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Review = ({ title, onTitleChange }) => {
   const [editing, setEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(title);
 
-  const handleTitleChange = (e) => {
-    setNewTitle(e.target.value);
+  useEffect(() => {setNewTitle(title);}, [title]);
+
+  const handleTitleChange = (id) => {
+    setNewTitle(id.target.value);
   };
 
   const _handleTitleBlur = () => {
