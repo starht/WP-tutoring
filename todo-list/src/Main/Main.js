@@ -5,7 +5,7 @@ import Review from '../componrents/Review';
 import {useState} from "react";
 
 const MainPage = () => {
-  const [todoListData, setTodoListData] = useState([{ title : '1234'}])
+  const [todoListData, setTodoListData] = useState([{ title : 'example'}])
 
   const onClickDelete = (id) => () => {
     setTodoListData((prev) => prev.filter((value, index) => id !== index))
@@ -29,6 +29,8 @@ const MainPage = () => {
   
   return (
   <div>
+    <div className='todo_header'>My Todolist</div>
+
     <Input onAddTodo={onAddTodo} />
     {
       todoListData.map((todoItemData, index) => (
@@ -36,7 +38,7 @@ const MainPage = () => {
           <TodoItem {...todoItemData} style={{ flex: "1" }} />
           <Review title={todoItemData.title} onTitleChange={handleTitleChange(index)} />
 
-          <button onClick={onClickDelete(index)}>Delete</button>
+          <button className="delete_button" onClick={onClickDelete(index)}>Delete</button>
         </div>
       ))
     }
