@@ -1,5 +1,6 @@
-import "./index.css";
+// import "./index.css";
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
 const Review = ({ title, onTitleChange }) => {
   const [editing, setEditing] = useState(false);
@@ -29,10 +30,15 @@ const Review = ({ title, onTitleChange }) => {
           onBlur={_handleTitleBlur}
         />
       ) : (
-        <span className="review" onClick={() => setEditing(true)}>{title}</span>
+        <Edit onClick={() => setEditing(true)}>{title}</Edit>
       )}
     </div>
   );
 };
+
+const Edit = styled.span`
+  color: rgb(131, 131, 131);
+  font-size: 8px;
+`;
 
 export default Review;
